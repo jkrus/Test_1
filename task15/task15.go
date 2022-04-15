@@ -6,7 +6,7 @@ func someFunc() {
 	v := createHugeString(1 << 62)
 	bytes := make([]byte, 100)
 	_ = copy(bytes, v[0:100])
-	justString = v[:100]
+	justString = string(bytes)
 
 }
 
